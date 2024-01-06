@@ -1,0 +1,62 @@
+body {
+    background-color: #white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.graph-container,
+.info-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 48%; /* Adjust the width based on your design */
+    box-sizing: border-box;
+}
+
+.graph-container {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.info-container {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.info-box {
+    margin-bottom: 20px;
+}
+
+.animated-box {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.animated-box:not(:first-child) {
+    margin-left: 0px;
+}
+
+.upcoming-payday p,
+.payment-account p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .graph-container,
+    .info-container {
+        width: 100%;
+    }
+}

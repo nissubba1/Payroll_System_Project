@@ -1,0 +1,89 @@
+#video-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  max-height: inherit;
+  object-fit: cover;
+  z-index: -1;
+}
+#video-background2 {
+  position: relative;
+  top:-10px;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  max-height: inherit;
+  object-fit: cover;
+  z-index: -1;
+}
+.signup-container {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  background-color: #fff;
+  width: 25%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.animated-button {
+  animation: coolAnimation 1s ease-in-out;
+}
+
+@keyframes coolAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

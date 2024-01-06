@@ -1,0 +1,12 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20;
+}
+
+.card {
+  margin-right: 20px;
+}
